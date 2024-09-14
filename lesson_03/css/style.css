@@ -1,0 +1,48 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Основні стилі */
+
+* {
+	color: blue;
+}
+h1 {
+	color: yellow;
+}
+#top {
+	color: green;
+}
+.nav-title {
+	color: red;
+}
+[class*="ri"] {
+	color: turquoise;
+}
+span.origin-span {
+	color: violet;
+}
+.in-text,
+.rise-text-2 {
+	color: salmon;
+}
+.admin-body p {
+	color: hotpink;
+}
+.organisation-body .organisation-text {
+	color: khaki;
+}
+.rise-body * {
+	color: royalblue;
+}
+.cossaks-body span {
+	color: darkgoldenrod;
+}
+.admin-body > p {
+	color: teal;
+}
+.organisation ~ p {
+	color: chocolate;
+}
+.rise-title + p {
+	color: rgb(6, 192, 9);
+}
