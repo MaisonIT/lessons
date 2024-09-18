@@ -1,0 +1,147 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:300italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+
+/* * Основні стилі */
+body {
+	font-family: "Inter", serif;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 2;
+}
+.main {
+	font-family: "Platz+Groteske", sans-serif;
+}
+.main-title {
+	color: blueviolet;
+	text-align: center;
+	word-spacing: 5px;
+	text-shadow: 2px 2px 3px blue;
+	font-weight: 900;
+}
+.list-title {
+	color: #776;
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+.main-list {
+	text-align: right;
+}
+.list-1 {
+	color: rgb(232, 232, 4);
+}
+.list-2 {
+	line-height: 1.5;
+}
+.list-3 a {
+	text-decoration: underline;
+	text-decoration-color: green;
+	line-height: 1.8;
+}
+.where-title {
+	font-size: 24px;
+	letter-spacing: 1px;
+	text-shadow:
+		2px 2px 1px yellow,
+		1px 1px 5px red;
+}
+.where-text {
+	text-transform: capitalize;
+	color: green;
+}
+.where-text-2 {
+	text-transform: lowercase;
+	color: red;
+}
+.where-text-3 {
+	text-transform: uppercase;
+}
+.where-text-4 {
+	white-space: nowrap;
+}
+.where-text-5 {
+	color: violet;
+	font-size: 10px;
+}
+.where-text-6 {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+.where-text-7 {
+	text-shadow: 2px -3px 3px red;
+}
+.rules-body {
+	font-family: "Pacifico";
+	font-size: 19px;
+}
+.rules-title {
+	color: red;
+	text-shadow: 1px 1px 2px brown;
+}
+.rules-text {
+	font-size: 15px;
+	color: blue;
+}
+.rules-text-2 {
+	color: green;
+	text-decoration: underline;
+}
+.rules-text-3 {
+	text-align: right;
+}
+.rules-text-4 {
+	letter-spacing: 2px;
+	color: hotpink;
+}
+.rules-text-5 {
+	color: red;
+}
+.practice-title {
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+.user {
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1.333;
+	color: #556070;
+}
+.user-title {
+	color: #132238;
+	font-size: 38px;
+	line-height: 1.315;
+	font-weight: 600;
+}
+.about {
+	font-family: "DM Sans", serif;
+	color: #474464;
+	font-size: 24px;
+	line-height: 1.75;
+}
+.about-title {
+	color: #1e1b39;
+	font-weight: 700;
+	font-size: 88px;
+	line-height: 1.079;
+}
+.introduce {
+	font-family: "Roboto";
+	font-size: 18px;
+	line-height: 1.666;
+	color: #505f98;
+}
+.introduce-title {
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 1.32;
+	letter-spacing: 1px;
+}
+.footer-link {
+	text-align: center;
+	font-size: 24px;
+}
