@@ -1,0 +1,222 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+body {
+	font-family: "Playfair Display SC", serif;
+	font-size: 18px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header {
+	padding: 30px;
+	background:
+		url("../img/bghead.webp") 0 0 / 350px no-repeat,
+		url("../img/bghead_2.jpeg") 200px 0 / 500px no-repeat,
+		url("../img/bghead_3.avif") 500px / cover no-repeat;
+}
+.header-title {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+	color: lawngreen;
+	font-size: 34px;
+	border: 2px solid lawngreen;
+	box-shadow: 2px 2px 10px greenyellow;
+	font-weight: 900;
+	border-radius: 3px;
+}
+.navigation {
+	padding: 50px;
+	color: rgb(208, 181, 5);
+	font-weight: 700;
+	text-align: center;
+	background: radial-gradient(circle, rgba(145, 204, 84, 1) 20%, rgba(195, 195, 195, 1) 100%);
+}
+.navigation li {
+	display: inline-block;
+}
+.navigation a {
+	background-color: #5b3f6e;
+	padding: 10px;
+	border: 5px dotted black;
+	border-radius: 4px;
+}
+.navigation-link-1 {
+	margin-right: 30px;
+}
+.homewrok {
+	color: wheat;
+	margin-bottom: 100px;
+	background: radial-gradient("circle, rgba(195, 195, 195, 1) 49%, rgba(3, 2, 2, 1) 81%");
+}
+.container {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding-inline: 10px;
+}
+.homework-body {
+	background: url("../img/background4.png") 0 0 / cover no-repeat fixed;
+	padding: 20px;
+	border: 5px solid rgb(149, 6, 90);
+	border-radius: 10px;
+}
+.homework-title {
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+.img-back-1 {
+	height: 200px;
+	width: 200px;
+	background: url("../img/imback_1.jpeg") -40px 0 / cover;
+	border-radius: 50%;
+}
+.img-back-2 {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	background: url("../img/imback_2.jpeg") 0 0 / 100px repeat;
+}
+.img-back-3 {
+	width: 200px;
+	height: 200px;
+	background: url("../img/imback_3.jpeg");
+	border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+}
+.img-back-1,
+.img-back-2,
+.img-back-3 {
+	margin-right: 200px;
+	display: inline-block;
+}
+.homework-text {
+	margin-top: 30px;
+	opacity: 0.3;
+}
+.homework-text-2 {
+	background: url("../img/text_2.png") 0 0 / cover repeat;
+	margin-bottom: 10px;
+	visibility: hidden;
+}
+.text-1 {
+	border-block: 2px double white;
+	margin-bottom: 10px;
+}
+.text-2 {
+	border-inline: 2px dashed white;
+	margin-bottom: 10px;
+}
+.text-3 {
+	border-block-end: 2px solid white;
+	margin-bottom: 10px;
+}
+.text-4 {
+	border-inline-start: 2px solid white;
+}
+.features {
+	background: #fdf0e9;
+	font-family: "Epilogue", sans-serif;
+	color: #391400;
+	line-height: 2;
+	margin-bottom: 100px;
+}
+.featuers-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-inline: 15px;
+	font-size: 0px;
+}
+.features-block-text {
+	max-width: 470px;
+	display: inline-block;
+	margin-right: 171px;
+	padding-top: 53px;
+}
+.featuers-title {
+	margin-bottom: 20px;
+	color: #ef6d58;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.featuers-subtitle {
+	font-size: 56px;
+	font-weight: 800;
+	letter-spacing: -1px;
+	line-height: 1.142857;
+	margin-bottom: 26px;
+	max-width: 397px;
+}
+.featuers-text {
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 26px;
+}
+.features-list {
+	font-size: 16px;
+}
+.list li {
+	margin-bottom: 16px;
+}
+.list-link {
+	padding-inline-start: 50px;
+	background: url("../img/icons/check.png") 0 0 / contain no-repeat;
+}
+.features-block-img {
+	display: inline-block;
+	max-width: 529px;
+	vertical-align: top;
+}
+.streaming {
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	min-height: 900px;
+	background:
+		url("../img/strback.png") 0 0 / contain no-repeat,
+		#141414;
+}
+.streaming-container {
+	max-width: 1096px;
+	margin: 0 auto;
+}
+.streaming-items {
+	text-align: center;
+	padding-top: 594px;
+}
+.streaming-title {
+	font-size: 58px;
+	color: white;
+}
+.streaming-text {
+	color: #999;
+	margin-bottom: 68.5px;
+}
+.streaming-button {
+	background: #e50000;
+	max-width: 251px;
+	margin: 0 auto;
+	border-radius: 8px;
+	padding-inline: 24px;
+	padding-block: 18px;
+	color: #fff;
+}
+.button span {
+	padding-left: 28px;
+	background: url("../img/icons/stricon.svg") 0 0 / contain no-repeat;
+}
+.footer {
+	padding: 50px;
+	text-align: center;
+}
+.footer-link {
+	border-radius: 5px;
+	box-shadow: 5px 3px 1px black;
+	padding: 20px;
+	background-color: #999;
+}
