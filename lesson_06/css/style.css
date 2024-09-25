@@ -53,7 +53,7 @@ body {
 .homewrok {
 	color: wheat;
 	margin-bottom: 100px;
-	background: radial-gradient("circle, rgba(195, 195, 195, 1) 49%, rgba(3, 2, 2, 1) 81%");
+	background-image: radial-gradient("circle, rgba(195, 195, 195, 1) 49%, rgba(3, 2, 2, 1) 81%");
 }
 .container {
 	max-width: 1500px;
