@@ -1,0 +1,122 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+body {
+	background-color: rgb(17, 218, 178);
+	font-family: "Geologica", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header-title {
+	font-size: 50px;
+	text-align: center;
+	color: gold;
+	font-weight: 900;
+	margin-bottom: 50px;
+}
+.body-container {
+	max-width: 1500px;
+	margin: 0 auto;
+	font-size: 0px;
+	padding-inline: 15px;
+}
+.body-items {
+	font-weight: 900;
+	font-size: 25px;
+}
+.logo {
+	margin-bottom: 40px;
+}
+.logo-text {
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 8px;
+}
+.video-img {
+	margin-bottom: 50px;
+}
+.text-video {
+	display: inline-block;
+	max-width: 600px;
+	margin-left: 30px;
+}
+.about-img {
+	margin-bottom: 60px;
+}
+.about-img img {
+	margin-bottom: 20px;
+}
+.about-text {
+	font-size: 30px;
+}
+.block-mob {
+	margin-bottom: 45px;
+}
+.block-mob img {
+	margin-bottom: 25px;
+}
+.text-mob {
+	margin-bottom: 50px;
+	font-size: 40px;
+}
+.text-size-2 {
+	font-size: 35px;
+}
+.icons-1 div:not(:last-child) {
+	margin-bottom: 40px;
+}
+.icons-1 {
+	font-size: 25px;
+}
+.calendar-text {
+	display: inline-block;
+	line-height: 1.5;
+	margin-left: 20px;
+}
+.portfolio-text {
+	display: inline-block;
+	line-height: 1.5;
+	margin-left: 20px;
+}
+.design {
+	padding-left: 150px;
+	background: url("../img/design/quotes-icon-design.svg") 0 0 / contain no-repeat;
+	min-height: 100px;
+}
+.gift {
+	min-width: 200px;
+	min-height: 100px;
+	background: url("../img/icons/star-icon.svg") 0 0 / contain no-repeat;
+}
+.gift img {
+	margin-left: 34px;
+	margin-top: 30px;
+}
+.gift-text {
+	margin-bottom: 50px;
+}
+.cloud-text {
+	margin-top: 20px;
+}
+.content-text {
+	margin-bottom: 35px;
+}
+.social-text {
+	margin-top: 20px;
+}
+.footer {
+	padding: 50px;
+	text-align: center;
+}
+.footer-link {
+	border-radius: 5px;
+	box-shadow: 5px 3px 1px black;
+	padding: 20px;
+	background-color: #999;
+}
