@@ -1,0 +1,33 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+body {
+	background-color: rgb(41, 169, 143);
+	font-family: "Geologica", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header-title {
+	font-size: 50px;
+	text-align: center;
+	color: gold;
+	font-weight: 900;
+	margin-bottom: 50px;
+}
+
+.footer {
+	padding: 50px;
+	text-align: center;
+}
+.footer-link {
+	border-radius: 5px;
+	box-shadow: 5px 3px 1px black;
+	padding: 20px;
+	background-color: #999;
+}
