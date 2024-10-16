@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 10</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="menu">
+				<div class="menu__container">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#position">Позиціонування</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item">
+										<a href="#static">Статичне(static)</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#relative">Відносне(relative)</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#absolute">Абсолютне(absolute)</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#fixed">Фіксоване(fixed)</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#sticky">Липке(sticky)</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="#index">z-index</a>
+							</li>
+							<li class="menu__item">
+								<a href="#practice">Практика</a>
+							</li>
+							<li class="menu__item">
+								<a href="#homework">Домашня робота</a>
+							</li>
+							<li class="menu__item">
+								<a href="#top">На гору</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- <h1 class="header-title">Домашнє завдання №9</h1> -->
+		</header>
+		<main class="main">
+			<div class="main__body">
+				<div class="main__container">
+					<div id="top" class="position">
+						<div class="position__items items">
+							<h2 id="position" class="items__title">Позиціонування</h2>
+							<p class="items__text items__text--after-1">position - це основний інструмент для контролю над тим,
+								як
+								елементи веб-сторінки відображаються на екрані. Завдяки різним типам позиціонування, ми можемо
+								змінювати положення елементів відносно їхніх батьківських елементів, вікна браузера чи інших
+								об'єктів.</p>
+							<h3 class="items__subtitle">Має такі властивості та запис:</h3>
+							<p class="items__text items__text--after-2">
+								<span>.position {</span>
+								<span>position: тип;</span>
+								<span>top:значення;</span>
+								<span>left:значення;</span>
+								<span>right:значення;</span>
+								<span>bottom:значення;</span>
+								<span>}</span>
+							</p>
+						</div>
+					</div>
+					<div class="static">
+						<div class="static__items items">
+							<h2 id="static" class="items__title">Статичне(static)</h2>
+							<p class="items__text">Це позиціонування за замовчуванням для всіх елементів. Воно не змінює
+								положення елементів відносно їх природного потоку в документі. Статично позиціоновані елементи
+								не реагують на властивості top, right, bottom і left.</p>
+							<div class="items__block example">
+								<div class="example__body">
+									<div class="example__item">1</div>
+									<div class="example__item">2</div>
+									<div class="example__item">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="relative">
+						<div class="relative__items items">
+							<h2 id="relative" class="items__title">Відносне(relative)</h2>
+							<p class="items__text">Елементи з відносним позиціонуванням зміщуються від свого звичайного місця у
+								документі. Вони залишають "порожнє" місце на початковій позиції.</p>
+							<div class="items__block example">
+								<div class="example__body">
+									<div class="example__item">1</div>
+									<div class="example__item example__item--relative">2</div>
+									<div class="example__item">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="absolute">
+						<div class="absolute__items items">
+							<h2 id="absolute" class="items__title">Абсолютне(absolute)</h2>
+							<p class="items__text">Елементи з абсолютним позиціонуванням розміщуються відносно найближчого
+								батьківського елемента, який має інше, ніж static, позиціонування. Якщо такого елемента немає,
+								елемент буде позиціонуватися відносно вікна браузера.</p>
+							<div class="items__block example">
+								<div class="example__body example__body--relative">
+									<div class="example__item">1</div>
+									<div class="example__item example__item--absolute">2</div>
+									<div class="example__item">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fixed">
+						<div class="fixed__items items">
+							<h2 id="fixed" class="items__title">Фіксоване(fixed)</h2>
+							<p class="items__text">Фіксовані елементи завжди залишаються на одному місці навіть при
+								прокручуванні сторінки. Вони розміщуються відносно вікна браузера.</p>
+							<div class="items__block example">
+								<div class="example__body">
+									<div class="example__item">1</div>
+									<div class="example__item example__item--fixed">2</div>
+									<div class="example__item">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sticky">
+						<div class="sticky__items items">
+							<h2 id="sticky" class="items__title">Липке(sticky)</h2>
+							<p class="items__text">Липке позиціонування поєднує властивості відносного та фіксованого
+								позиціонування. Елемент діє як відносно позиціонований, доки не досягне певної точки
+								прокручування, після чого "прилипає" і веде себе як фіксований.</p>
+							<div class="items__block example">
+								<div class="example__body example__body--height">
+									<div class="example__item">1</div>
+									<div class="example__item example__item--sticky">2</div>
+									<div class="example__item">3</div>
+								</div>
+								<img src="img/back.webp" alt="Cosmo" class="items__image">
+							</div>
+						</div>
+					</div>
+					<div class="index">
+						<div class="index__items items">
+							<h2 id="index" class="items__title">z-index</h2>
+							<p class="items__text">z-index визначає порядок накладання елементів, коли вони перекриваються.
+								Елементи з більшим значенням z-index будуть поверх елементів з меншим значенням.</p>
+							<div class="items__block example">
+								<div class="example__body">
+									<div class="example__item example__item--index-1">1</div>
+									<div class="example__item example__item--index-2">2</div>
+									<div class="example__item example__item--index-3">3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="practice">
+						<div class="practice__items items">
+							<h2 id="practice" class="items__title">Практика</h2>
+							<ul class="items__list sticky">
+								<li class="sticky__list">
+									<div class="sticky__body">Easy</div>
+									<ul class="sticky__sub-list">
+										<li class="sticky__sub-item">Вступ</li>
+										<li class="sticky__sub-item">Програми та інструменти</li>
+										<li class="sticky__sub-item">HTML Теги. Теги для побудови</li>
+										<li class="sticky__sub-item">HTML Теги. Теги для роботи з контентом</li>
+									</ul>
+								</li>
+								<li class="sticky__list">
+									<div class="sticky__body">Not so hard</div>
+									<ul class="sticky__sub-list">
+										<li class="sticky__sub-item">CSS Знайомство та синтаксис</li>
+										<li class="sticky__sub-item">CSS стилі шрифту та тексту</li>
+										<li class="sticky__sub-item">CSS підключення шрифтів</li>
+										<li class="sticky__sub-item">CSS властивості блоків</li>
+										<li class="sticky__sub-item">CSS властивості оформлення блоків</li>
+										<li class="sticky__sub-item">CSS властивість background</li>
+									</ul>
+								</li>
+								<li class="sticky__list">
+									<div class="sticky__body">You might know something)</div>
+									<ul class="sticky__sub-list">
+										<li class="sticky__sub-item">CSS псевдокласи</li>
+										<li class="sticky__sub-item">CSS псевдоелементи</li>
+										<li class="sticky__sub-item">CSS позиціонування</li>
+										<li class="sticky__sub-item">CSS FlexBox</li>
+										<li class="sticky__sub-item">CSS анімація</li>
+									</ul>
+								</li>
+								<li class="sticky__list">
+									<div class="sticky__body">Prouve youre skills</div>
+									<ul class="sticky__sub-list">
+										<li class="sticky__sub-item">Адаптивна верстка</li>
+										<li class="sticky__sub-item">SCSS препроцесор</li>
+										<li class="sticky__sub-item">Робота з картинками</li>
+										<li class="sticky__sub-item">CSS Grid Layout</li>
+									</ul>
+								</li>
+								<li class="sticky__list">
+									<div class="sticky__body">Like a God</div>
+									<ul class="sticky__sub-list">
+										<li class="sticky__sub-item">JS Введення та синтаксис</li>
+										<li class="sticky__sub-item">JS Змінні та масиви</li>
+										<li class="sticky__sub-item">JS робота з DOM</li>
+										<li class="sticky__sub-item">Практика на вибір групи</li>
+										<li class="sticky__sub-item">Огляд можливостей стартового шаблону "Чертоги Фрілансера"
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="homework" class="homework">
+						<div class="homework__container">
+							<div class="design">
+								<div class="design__items">
+									<div class="design__item design__item--cirkle"></div>
+									<div class="design__item design__item--violet"></div>
+									<div class="design__item design__item--yellow"></div>
+									<div class="design__item design__item--red">
+										<img src="img/design/stars.svg" alt="Stars">
+									</div>
+									<div class="design__item design__item--arrow">
+										<img src="img/design/arrow.svg" alt="Arrow">
+									</div>
+									<div class="design__item design__item--arrow-2">
+										<img src="img/design/arrow_2.svg" alt="Arrow">
+									</div>
+									<div class="design__item design__item--svg">
+										<img src="img/design/block.svg" alt="Task Svg">
+									</div>
+									<div class="design__item design__item--laptop">
+										<img src="img/design/laptop.webp" alt="Laptop">
+									</div>
+									<div class="design__item design__item--girl">
+										<img src="img/design/girl.webp" alt="Girl">
+									</div>
+								</div>
+							</div>
+							<div class="work">
+								<div class="work__items">
+									<img class="work__image" src="img/work/back.webp" alt="Waves">
+									<div class="work__text">
+										<a class="work__button" href="#">Deisgn</a>
+										<h2 class="work__title">Sofa</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<h2 class="footer__title">By MD Incorporated</h2>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+
+body {
+	background-color: rgb(67, 178, 156);
+	font-family: "Geologica", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+.header {
+	background-color: rgb(139, 238, 106);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	opacity: 0.9;
+	z-index: 100;
+}
+.menu {
+	position: relative;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+.menu__body {
+	font-size: 25px;
+	position: sticky;
+}
+.menu__list {
+	text-align: center;
+	padding-block: 20px;
+}
+.menu__item {
+	display: inline-block;
+	position: relative;
+	padding-inline: 30px;
+	z-index: 999;
+}
+/* .menu__item:not(:last-child) {
+	margin-inline-end: 30px;
+} */
+.sub-menu {
+	position: absolute;
+	inset-inline-start: -10px;
+	inset-block-start: 100%;
+	inline-size: 300px;
+	padding: 15px;
+	border-radius: 10px;
+	visibility: hidden;
+	background-color: rgb(139, 238, 106);
+}
+.menu__item a:hover {
+	text-decoration: underline;
+}
+.menu__item:hover .sub-menu {
+	visibility: visible;
+}
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+/* .header-title {
+	font-size: 50px;
+	text-align: center;
+	color: gold;
+	font-weight: 900;
+	margin-bottom: 50px;
+} */
+/* .main {
+	padding-block: 90px;
+}  */
+.position,
+.static,
+.relative,
+.absolute,
+.sticky,
+.fixed {
+	/* padding-block-start: 40px; */
+	padding-block-end: 50px;
+}
+.position {
+	padding-block-start: 100px;
+}
+
+.items__title {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.items__subtitle {
+	text-align: center;
+	font-size: 25px;
+	padding-block: 25px;
+}
+.items__text {
+	padding: 20px;
+	border: 5px solid black;
+	background-color: wheat;
+	line-height: 1.5;
+	margin-block-end: 40px;
+}
+
+.items__text span {
+	display: block;
+}
+.items__text span:not(:last-child) {
+	margin-block-end: 10px;
+}
+.items {
+	position: relative;
+}
+.items__text--after-1::after {
+	content: "";
+	/* display: block; */
+	position: absolute;
+	top: 180px;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background-color: black;
+}
+.items__text--after-2::after {
+	content: "";
+	/* display: block; */
+	position: absolute;
+	top: 580px;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background-color: black;
+}
+
+/* .example {
+	padding-block-start: 25px;
+	padding-block-end: 50px; 
+} */
+
+.example__body {
+	text-align: center;
+	position: relative;
+}
+
+.example__item {
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 50px;
+	padding: 20px;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	background-color: darkcyan;
+	border: 3px solid black;
+}
+.example__item:not(:last-child) {
+	margin-inline-end: 50px;
+}
+.example__item--relative {
+	position: relative;
+	inset-inline-start: 50px;
+	inset-block-start: 20px;
+}
+/* .example__body--relative {
+	position: relative;
+} */
+.example__item--absolute {
+	position: absolute;
+	inset-inline-start: 20px;
+	inset-block-start: 40px;
+}
+.example__item--fixed {
+	position: fixed;
+	inset-inline-start: 1300px;
+	inset-block-start: 200px;
+}
+.example__item--sticky {
+	position: sticky;
+	top: 20px;
+}
+.sticky {
+	position: relative;
+}
+.example__body--height {
+	height: 200px;
+}
+.items__image {
+	position: absolute;
+	border-radius: 0 0 10px 10px;
+	width: 100%;
+	height: 370px;
+	top: 52px;
+	left: 0;
+	z-index: -1;
+}
+.example__item--index-1 {
+	position: absolute;
+	top: 0;
+	left: 580px;
+	z-index: 1;
+}
+.example__item--index-2 {
+	position: absolute;
+	top: 0;
+	left: 500px;
+	/* opacity: 0.8; */
+	z-index: 3;
+}
+.example__item--index-3 {
+	position: absolute;
+	top: 70px;
+	left: 540px;
+	z-index: 2;
+}
+.practice {
+	padding-block-start: 220px;
+	padding-block-end: 50px;
+}
+
+.sticky__body {
+	background-color: rgb(52, 113, 170);
+	padding-block: 10px;
+	padding-inline-start: 20px;
+	border-radius: 10px;
+	/* margin-block-end: 10px; */
+	position: sticky;
+	top: 90px;
+}
+
+.sticky__sub-item {
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.design {
+	background-color: #28293e;
+	height: 800px;
+}
+
+.design__items {
+	position: relative;
+}
+
+.design__item--cirkle {
+	background: #32334c;
+	width: 370px;
+	height: 370px;
+	border-radius: 50%;
+	position: absolute;
+	inset-inline-start: 400px;
+	inset-block-start: 200px;
+}
+
+.design__item--violet {
+	background-color: #b550f8;
+	position: absolute;
+	inset-inline-start: 300px;
+	inset-block-start: 100px;
+	height: 305px;
+	width: 246px;
+	border-radius: 50% 50% 10px 10px;
+}
+
+.design__item--yellow {
+	background-color: #f7cc47;
+	position: absolute;
+	inset-inline-start: 600px;
+	inset-block-start: 300px;
+	height: 305px;
+	width: 246px;
+	border-radius: 50% 50% 10px 10px;
+}
+
+.design__item--red {
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+	background-color: #ef6d58;
+	position: absolute;
+	inset-inline-start: 600px;
+	inset-block-start: 137px;
+	text-align: center;
+	padding-block-start: 28px;
+}
+
+.design__item--svg {
+	position: absolute;
+	inset-inline-start: 330px;
+	inset-block-start: 530px;
+}
+.design__item--arrow {
+	position: absolute;
+	inset-block-start: 450px;
+	inset-inline-start: 300px;
+}
+.design__item--arrow-2 {
+	position: absolute;
+	inset-block-start: 650px;
+	inset-inline-start: 590px;
+}
+.design__item--laptop {
+	position: absolute;
+	inset-inline-start: 315px;
+	inset-block-start: 130px;
+}
+
+.design__item--girl {
+	position: absolute;
+	inset-inline-start: 600px;
+	inset-block-start: 336px;
+}
+.work {
+	background-color: #28293e;
+	padding: 100px;
+	height: 800px;
+}
+
+.work__items {
+	position: relative;
+	z-index: 1;
+}
+
+.work__image {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	z-index: -1;
+	font-family: "Epilogue", sans-serif;
+}
+.work__text {
+	position: absolute;
+	inset-block-start: 416px;
+	inset-inline-start: 48px;
+}
+.work__button {
+	background-color: #fff;
+	padding-inline: 16px;
+	color: #391400;
+	line-height: 2;
+	border-radius: 19px;
+	margin-block-end: 24px;
+}
+
+.work__title {
+	font-weight: 800;
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.2;
+}
+
+.footer__title {
+	font-size: 30px;
+	text-align: center;
+	padding-block: 30px;
+}
