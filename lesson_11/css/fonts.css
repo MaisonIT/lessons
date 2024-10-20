@@ -1,0 +1,4 @@
+/* !!! В кінці встановлення штрифту завжди додай &display=swap */
+
+/* * Підключення шрифту Geologica */
+@import url("https://fonts.googleapis.com/css?family=Geologica:regular,900&display=swap");
