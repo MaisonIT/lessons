@@ -155,6 +155,8 @@ sup {
 	left: 0;
 	z-index: -1;
 	border-radius: 6px;
+	transition: 0.4s;
+	transition-property: transform;
 }
 
 .branding {
@@ -169,10 +171,14 @@ sup {
 	left: 0;
 	z-index: -1;
 	border-radius: 6px;
+	transition: 0.4s;
+	transition-property: transform;
 }
-.branding__image img:hover {
+/* .branding__image img:hover {
 	transform: scale(1.2);
-}
+	transition: 0.4s;
+	transition-property: transform;
+} */
 .illustration {
 	position: relative;
 	width: 670px;
@@ -185,6 +191,8 @@ sup {
 	left: 0;
 	z-index: -1;
 	border-radius: 6px;
+	transition: 0.4s;
+	transition-property: transform;
 }
 
 .motion {
@@ -199,6 +207,8 @@ sup {
 	left: 0;
 	z-index: -1;
 	border-radius: 6px;
+	transition: 0.4s;
+	transition-property: transform;
 }
 .bottom-button {
 	text-align: center;
@@ -302,7 +312,11 @@ sup {
 	border-radius: 6px;
 	border: 1px solid #3a3c56;
 }
-
+.cards__items:hover {
+	transform: scale(1.02);
+	transition: 0.4s;
+	transition-property: transform;
+}
 .cards__item--after::after {
 	content: "";
 	height: 1px;
@@ -349,7 +363,15 @@ sup {
 	line-height: 1.333;
 	margin-block-end: 19px;
 }
-
+.bottom-card__button {
+	transition: 0.4s;
+	transition-property: color;
+}
+.bottom-card__button:hover {
+	color: #ef6d58;
+	transition: 0.4s;
+	transition-property: color;
+}
 .bottom-card__text {
 	color: rgba(255, 255, 255, 0.64);
 	margin-block-end: 26px;
