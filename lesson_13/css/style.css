@@ -134,7 +134,7 @@ sup {
 	border-radius: 19px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	margin-block-end: 24px;
-	transition: 0.3s, 0.3;
+	transition: 0.3s, 0.3s;
 	transition-property: background, outline;
 }
 .bottom__button:hover {
