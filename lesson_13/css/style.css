@@ -67,7 +67,8 @@ body {
 }
 .bottom-list__nav {
 	color: rgba(255, 255, 255, 0.64);
-	display: inline-flex;
+	display: flex;
+	flex-wrap: wrap;
 	column-gap: 60px;
 	justify-content: center;
 }
@@ -302,6 +303,7 @@ sup {
 
 .cards {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	column-gap: 30px;
 }
@@ -327,6 +329,7 @@ sup {
 
 .cards__top {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	column-gap: 12px;
 	margin-block-end: 19px;
@@ -346,6 +349,7 @@ sup {
 }
 .cards__time {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	column-gap: 8px;
 	margin-block-end: 36px;
@@ -447,6 +451,7 @@ sup {
 .present__buttons {
 	margin-block-end: 180px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	column-gap: 20px;
 }
@@ -476,24 +481,18 @@ sup {
 
 .founder__items {
 	display: flex;
+	flex-wrap: wrap;
 	/* column-gap: 130px; */
 	justify-content: space-between;
 	min-height: 448px;
 }
 .founder__item img:nth-child(1) {
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: -1; */
+	border-radius: 6px;
 }
-.founder__item img:nth-child(2) {
-	position: absolute;
-	padding: 28px 51px 0px 42px;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-
 .founder__item--shape {
 	max-width: 470px;
 	padding-block-start: 44px;
