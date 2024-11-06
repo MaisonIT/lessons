@@ -1,0 +1,217 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+
+body {
+	background: #28293e;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.header__title {
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 2px 5px violet;
+	color: wheat;
+	font-weight: 900;
+	padding-block: 50px;
+}
+[class*="__container"] {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.personal {
+	background-color: #e6e8eb;
+	padding: 20px;
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1.333;
+	color: #87909d;
+}
+
+.personal__data {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 15px;
+	max-width: 620px;
+	margin: 0 auto;
+}
+.personal__label {
+	margin-block-end: 50px;
+}
+.personal__item {
+	width: 100%;
+}
+.personal__item::after {
+	content: "";
+	margin-block-start: 14px;
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: #87909d;
+	/*  margin-block-start: 14px;  */
+}
+.personal__form {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	column-gap: 24px;
+	margin-block-end: 50px;
+	/* justify-content: space-between; */
+}
+.personal__double {
+	display: flex;
+	column-gap: 24px;
+	flex-grow: 1;
+}
+.personal__double div:nth-child(1) {
+	flex-basis: 200px;
+	flex-shrink: 1;
+}
+.personal__item:hover label {
+	color: #a53dff;
+}
+.personal__item input:focus::placeholder {
+	color: #a53dff;
+}
+.personal__item input:hover::placeholder {
+	color: #a53dff;
+}
+.personal__item:hover::after {
+	background-color: #a53dff;
+}
+.personal__form-button {
+	display: inline-block;
+}
+.personal__button {
+	border-radius: 4px;
+	font-weight: 600;
+	line-height: 1.5;
+	border-radius: 4px;
+	background-color: #a53dff;
+	max-width: 100%;
+}
+.button-bottom__button {
+	color: #fff;
+	padding: 12px 24px;
+	font-size: 16px;
+	display: flex;
+	column-gap: 12px;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+}
+.button-bottom__button::after {
+	content: "";
+	width: 24px;
+	height: 24px;
+	flex-shrink: 1;
+	background: url("../img/ppaper_plane.svg") 0 0 / contain no-repeat;
+}
+.registration {
+	font-family: "Manrope", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: #141414;
+	padding-block: 100px;
+	color: #fff;
+}
+
+.registration__body {
+	padding: 50px;
+	background-color: #0f0f0f;
+	border-radius: 12px;
+	max-width: 976px;
+	margin: 0 auto;
+}
+
+.registration__form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+}
+
+.registration__top,
+.registration__middle {
+	display: flex;
+	column-gap: 50px;
+	/* flex-wrap: wrap; */
+}
+
+.item-registration__label {
+	font-weight: 600;
+}
+
+.item-registration__first,
+.item-registration__second,
+.item-registration__email,
+.item-registration__tel {
+	background-color: #141414;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #262626;
+	margin-block-start: 16px;
+	width: 413px;
+}
+
+.item-registration__message {
+	margin-block-start: 16px;
+	border-radius: 8px;
+	border: 1px solid #262626;
+	background-color: #141414;
+	padding: 20px;
+	min-height: 163px;
+}
+.registration__bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.item-checkbox__label {
+	color: #999;
+	font-weight: 400;
+}
+input[type="checkbox"] {
+	appearance: none;
+}
+.item-checkbox__label {
+	display: inline-flex;
+	column-gap: 10px;
+	cursor: pointer;
+}
+.item-checkbox__label::before {
+	content: "";
+	width: 28px;
+	height: 28px;
+	border: 1px solid #262626;
+	border-radius: 4px;
+}
+.item-checkbox__chek:focus-visible + .item-checkbox__label {
+	outline: 1px solid #fff;
+}
+.item-checkbox__chek:checked + .item-checkbox__label::before {
+	background-color: #fff;
+}
+
+.button-registration__button {
+	padding: 18px 24px;
+	font-weight: 600;
+	background-color: #e50000;
+	border-radius: 8px;
+}
+.footer__title {
+	font-size: 30px;
+	text-align: center;
+	padding-block: 50px;
+	color: wheat;
+	letter-spacing: 2px;
+}

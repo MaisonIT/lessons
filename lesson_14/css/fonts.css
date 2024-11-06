@@ -1,0 +1,7 @@
+/* !!! В кінці встановлення штрифту завжди додай &display=swap */
+
+/* * Підключення шрифту Work Sans */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+/* * Підключення шрифту Manrope */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600&display=swap");
