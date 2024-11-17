@@ -780,7 +780,7 @@ body {
 	.header-template__menu::before {
 		content: "";
 		position: fixed;
-		block-size: 220px;
+		block-size: 250px;
 		inline-size: 100%;
 		inset-inline-start: 100%;
 		transition: inset-inline-start 0.3s;
