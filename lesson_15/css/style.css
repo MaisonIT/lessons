@@ -827,7 +827,40 @@ body {
 		display: none;
 	}
 }
-@media (max-width: 650px) {
+@media (max-width: 655px) {
+	.start__items {
+		padding-inline: 30px;
+	}
+	.head-title__label {
+		font-size: 38px;
+	}
+	.header-template__menu {
+		position: fixed;
+		inset-inline-start: 100%;
+		inset-block-start: 0;
+		inline-size: 100%;
+		block-size: 100%;
+		transition: inset-inline-start 0.3s;
+		z-index: 3;
+		overflow: auto;
+		background-color: #28293e;
+		padding: 300px 15px 30px;
+		transition: inset-inline-start 0.3s;
+	}
+	.header-template__menu::before {
+		content: "";
+		position: fixed;
+		block-size: 280px;
+		inline-size: 100%;
+		inset-inline-start: 100%;
+		transition: inset-inline-start 0.3s;
+		inset-block-start: 0;
+		background-color: #28293e;
+		z-index: 3;
+	}
+	.menu__lists {
+		row-gap: 10px;
+	}
 	.head-title__list {
 		display: none;
 	}
@@ -856,12 +889,11 @@ body {
 	.start__image {
 		margin-block-start: 0;
 	}
-	.start__item--cloud::after {
-		width: 200px;
-		height: 200px;
-	}
 }
 @media (max-width: 1110px) {
+	.image-block__label {
+		font-size: 30px;
+	}
 	.start__items {
 		flex-wrap: wrap;
 		row-gap: 30px;
@@ -892,37 +924,17 @@ body {
 	.dark-title__title {
 		font-size: 30px;
 	}
-}
-@media (max-width: 655px) {
-	.header-template__menu {
-		position: fixed;
-		inset-inline-start: 100%;
-		inset-block-start: 0;
-		inline-size: 100%;
-		block-size: 100%;
-		transition: inset-inline-start 0.3s;
-		z-index: 3;
-		overflow: auto;
-		background-color: #28293e;
-		padding: 300px 15px 30px;
-		transition: inset-inline-start 0.3s;
-	}
-	.header-template__menu::before {
-		content: "";
-		position: fixed;
-		block-size: 280px;
-		inline-size: 100%;
-		inset-inline-start: 100%;
-		transition: inset-inline-start 0.3s;
-		inset-block-start: 0;
-		background-color: #28293e;
-		z-index: 3;
-	}
-	.menu__lists {
-		row-gap: 10px;
+	.start__item--cloud::after {
+		width: 100%;
+		height: 100%;
+		top: 90px;
+		left: -30px;
 	}
 }
 @media (max-width: 430px) {
+	.head-title__label {
+		font-size: 28px;
+	}
 	.header-template__menu {
 		position: fixed;
 		inset-inline-start: 100%;
