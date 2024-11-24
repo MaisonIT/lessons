@@ -297,11 +297,8 @@ body {
 	}
 }
 @media (max-width: 1030px) {
-	.flex__items {
-		justify-content: center;
-	}
 	.items-flex__item {
-		flex: 0 1 70%;
+		flex: 1 1 40%;
 	}
 }
 @media (max-width: 992px) {
