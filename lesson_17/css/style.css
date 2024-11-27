@@ -412,7 +412,7 @@ body {
 	}
 	.menu-select select {
 		width: 100%;
-		padding: 9px 16px;
+		padding: 16px 16px;
 		border-radius: 6px;
 		color: rgba(57, 20, 0, 0.64);
 		appearance: none;
