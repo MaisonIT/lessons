@@ -1,0 +1,4 @@
+/* !!! В кінці встановлення штрифту завжди додай &display=swap */
+
+/* * Підключення шрифту Epilogue */
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800&display=swap");
