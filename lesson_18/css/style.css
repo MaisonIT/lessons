@@ -20,11 +20,29 @@ body {
 .wrapper > main {
 	flex-grow: 1;
 }
+.header {
+	padding-block-start: 30px;
+	text-align: right;
+}
+.header__button {
+	color: #fff;
+	font-size: 38px;
+	transition:
+		0.4s color,
+		0.4s underline;
+}
+.header__button:hover {
+	color: wheat;
+	text-decoration: underline;
+}
 [class*="__container"] {
 	max-width: 1349px;
 	margin-inline: auto;
 	padding-inline: 15px;
 }
+
+/* * Практика 18 уроку */
+
 .page__body {
 	padding-block: 50px;
 }
@@ -61,6 +79,9 @@ body {
 	object-fit: cover;
 	z-index: -1;
 }
+
+/* * Медіа запити */
+
 @media (min-width: 430px) {
 	.page__title {
 		font-size: 37px;
