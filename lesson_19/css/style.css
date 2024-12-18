@@ -1,0 +1,66 @@
+/* * Підключення обнулення */
+@import url("reset.css");
+
+/* * Підключення шрифтів */
+@import url("fonts.css");
+
+/* * Основні стилі */
+
+/* body {
+	background-color: #403d3e;
+	line-height: 1;
+	height: 100%;
+} */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* .footer__title {
+	font-size: 30px;
+	text-align: center;
+	padding-block: 50px;
+	color: wheat;
+	letter-spacing: 2px;
+} */
+/* @media (max-width: 1400px) {
+}
+@media (max-width: 1350px) {
+}
+@media (max-width: 1300px) {
+}
+@media (max-width: 1250px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1150px) {
+}
+@media (max-width: 1110px) {
+}
+@media (max-width: 1087px) {
+}
+@media (max-width: 1030px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 850px) {
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 750px) {
+}
+@media (max-width: 655px) {
+}
+@media (max-width: 630px) {
+}
+@media (max-width: 605px) {
+}
+@media (max-width: 600px) {
+} */
