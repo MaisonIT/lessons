@@ -337,7 +337,7 @@ path {
 	/* position: absolute;
 	bottom: -2.25rem;
 	left: 5rem; */
-	translate: 0 -32px;
+	transform: translate(0 -2rem);
 	padding: 0.75rem;
 	background-color: var(--colorMain);
 	max-width: 16.5rem;
