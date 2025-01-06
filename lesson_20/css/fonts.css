@@ -1,0 +1,8 @@
+/* !!! В кінці встановлення штрифту завжди додай &display=swap */
+/* * Підключення шрифту Work Sans */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap");
+
+/* * Підключення шрифту Poppins */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
+/* * Підключення шрифту Public Sans  */
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:regular&display=swap");
