@@ -3,6 +3,7 @@
 
 /* * Підключення шрифтів */
 @import url("fonts.css");
+
 /* * Змінні кольюору */
 
 :root {
@@ -20,6 +21,7 @@ html {
 address {
 	font-style: normal;
 }
+
 /* * Основні стилі */
 
 * {
@@ -47,6 +49,7 @@ path {
 }
 
 /* Обмежуючий контейнер */
+
 [class*="__container"] {
 	max-width: 84.375rem;
 	padding-inline: 0.9375rem;
@@ -61,13 +64,6 @@ path {
 	z-index: 1000;
 	background-color: var(--colorMain);
 }
-
-.header__container {
-}
-
-.header__body {
-}
-
 .header__items {
 	display: flex;
 	justify-content: space-between;
@@ -76,9 +72,6 @@ path {
 .header__items .block-menu__list:last-child {
 	display: none;
 }
-.block-menu {
-}
-
 .block-menu__logo:hover {
 	transform: scale(1.1);
 }
@@ -104,20 +97,9 @@ path {
 	color: var(--colorTitle2);
 	font-weight: 500;
 }
-
 .block-menu__list a:hover {
 	color: var(--colorHover);
 }
-
-.block-menu__link {
-}
-
-.block-menu__button {
-}
-
-.buttons {
-}
-
 .buttons__button {
 	padding: 0.75rem 1.5rem;
 	color: var(--colorMain);
@@ -135,16 +117,8 @@ path {
 	display: none;
 }
 
-.burger-menu {
-}
 /* Блок main */
-
-.main {
-}
 /* Секція hero */
-
-.hero {
-}
 
 .hero__container {
 	padding-block-start: 7.875rem;
@@ -181,12 +155,10 @@ path {
 	gap: 1.875rem;
 	justify-content: space-between;
 }
-
 .hero__item {
 	max-width: 40.5rem;
 	padding-block-start: 3.25rem;
 }
-
 .hero__img {
 	max-width: 33.5rem;
 	max-height: 39.75rem;
@@ -207,7 +179,6 @@ path {
 	gap: 1.5rem;
 	margin-block-end: 8.875rem;
 }
-
 .item-hero .head-text__title {
 	font-size: clamp(2rem, 2.5vw + 2rem, 4.5rem);
 }
@@ -237,23 +208,17 @@ path {
 	position: absolute;
 	bottom: 0.25rem;
 }
-
-.head-text__button {
-}
-
 .item-hero__bottom {
 	display: flex;
 	gap: 0.25rem;
 	flex-basis: 44.0625rem;
 }
-
 .item-hero__cv {
 	background-color: var(--colorBack);
 	padding-block: 1rem;
 	text-align: center;
 	flex-grow: 1;
 }
-
 .item-hero__top {
 	font-size: 2rem;
 	font-weight: 600;
@@ -261,17 +226,13 @@ path {
 	margin-block-end: 0.5rem;
 	line-height: 1.25;
 }
-
 .item-hero__label {
 	color: #697484;
 	line-height: 1.5;
 }
 
-.about {
-}
+/* Секція about */
 
-.about__container {
-}
 .about__container::before {
 	content: "";
 	width: 33.8125rem;
@@ -308,7 +269,6 @@ path {
 	left: -6.25rem;
 	z-index: -1;
 }
-
 .about__items {
 	background-color: #fff;
 	border-radius: 1rem;
@@ -318,7 +278,6 @@ path {
 	justify-content: space-between;
 	gap: 0.9375rem;
 }
-
 .about__item:nth-child(2) {
 	max-width: 33.5rem;
 	display: flex;
@@ -356,7 +315,6 @@ path {
 	border-color: var(--colorHover);
 	color: var(--colorHover);
 }
-
 .about .buttons__button:hover svg path,
 .portfolio .buttons__button:hover svg path {
 	fill: var(--colorHover);
@@ -379,7 +337,7 @@ path {
 	/* position: absolute;
 	bottom: -2.25rem;
 	left: 5rem; */
-	translate: 0 -2.25rem;
+	translate: 0 -32px;
 	padding: 0.75rem;
 	background-color: var(--colorMain);
 	max-width: 16.5rem;
@@ -398,25 +356,22 @@ path {
 .social__link:hover svg path {
 	transition: 0.4s all;
 }
-.social {
-}
-
 .social__link {
 	padding: 0.9375rem;
 	max-height: 3rem;
 }
 
+/* Секція process */
+
 .process {
 	background-color: #f0f1f3;
 }
-
 .process__container {
 	margin-block-start: -7rem;
 	margin-block-end: 6.25rem;
 	padding-block-start: 15.5rem;
 	padding-block-end: 8.75rem;
 }
-
 .process__items {
 	display: flex;
 	justify-content: space-between;
@@ -448,7 +403,6 @@ path {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1.5rem;
 }
-
 .item-process__item {
 	max-width: 19.5rem;
 	background-color: var(--colorMain);
@@ -475,22 +429,18 @@ path {
 	margin-block-end: 2rem;
 	border-radius: 6px;
 }
-
 .item-process__title {
 	margin-block-end: 12px;
 	font-size: 1.25rem;
 	color: var(--colorTitle);
 	line-height: 1.2;
 }
-
 .item-process__text {
 	line-height: 1.5;
 	color: #556070;
 }
 
-.portfolio {
-}
-
+/* Секція portfolio */
 .portfolio__container,
 .partnership__container,
 .blog__container,
@@ -500,31 +450,26 @@ path {
 .contact__container {
 	margin-block-end: 6.25rem;
 }
-
 .portfolio__title {
 	text-align: center;
 	margin-inline: auto;
 	max-width: 36.0625rem;
 	margin-block-end: 4.375rem;
 }
-
 .portfolio__items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.5rem;
 	margin-block-end: 3.125rem;
 }
-
 .portfolio__item {
 	border-radius: 8px;
 	border: 0.0625rem solid var(--Gray-100, #e6e8eb);
 	box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
 }
-
 .item-portfolio {
 	line-height: 1.333;
 }
-
 .item-portfolio__img {
 	aspect-ratio: 424 / 248;
 }
@@ -574,15 +519,12 @@ path {
 .portfolio__button {
 	text-align: center;
 }
-
 .partnership {
 	background-color: var(--colorTitle);
 }
-
 .partnership__container {
 	margin-block-end: 6.25rem;
 }
-
 .partnership__item {
 	padding-block: 6.25rem;
 	max-width: 38.8125rem;
@@ -600,11 +542,9 @@ path {
 	gap: 0.75rem;
 	justify-content: center;
 }
-.blog {
-}
 
-.blog__container {
-}
+/* Секція blog */
+
 .blog__container::before {
 	content: "";
 	width: 54.4375rem;
@@ -629,7 +569,6 @@ path {
 	filter: blur(300px);
 	z-index: -1;
 }
-
 .blog__head {
 	text-align: center;
 	max-width: 540px;
@@ -650,7 +589,6 @@ path {
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 }
-
 .blog__item {
 	border-radius: 0.5rem;
 	border: 0.0625rem solid #f0f1f3;
@@ -660,8 +598,6 @@ path {
 .blog__item:hover {
 	box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
 }
-.item-blog {
-}
 .item-blog__img {
 	aspect-ratio: 312 / 226;
 }
@@ -670,11 +606,9 @@ path {
 	height: 100%;
 	object-fit: cover;
 }
-
 .item-blog__info {
 	padding: 1.5rem;
 }
-
 .item-blog__text,
 .item-blog__time {
 	font-size: 0.875rem;
@@ -689,7 +623,6 @@ path {
 	font-weight: 500;
 	line-height: 1.333;
 }
-
 .scroll {
 	display: flex;
 	justify-content: center;
@@ -703,27 +636,17 @@ path {
 .scroll__list:nth-child(1) svg circle {
 	fill: #210c33;
 }
-.scroll {
-}
 
-.scroll__button {
-}
+/* Секція services */
 
 .services {
 	background-color: #f0f1f3;
 }
-
-.services__container {
-}
-
 .services__items {
 	padding-block: 9.375rem;
 	display: flex;
 	justify-content: space-between;
 	gap: 1.875rem;
-}
-
-.services__item {
 }
 .services__item:nth-child(1) {
 	padding-block: 7.4375rem;
@@ -738,7 +661,6 @@ path {
 	max-width: 36.5rem;
 	gap: 1.5rem;
 }
-
 .item-services__about {
 	background-color: var(--colorMain);
 	padding: 2rem;
@@ -755,17 +677,12 @@ path {
 	line-height: 1;
 	margin-block-end: 1rem;
 }
-
 .item-services__text {
 	color: #424e60;
 	line-height: 1.5;
 }
 
-.clients {
-}
-
-.clients__container {
-}
+/* Секція clients */
 
 .clients__head {
 	text-align: center;
@@ -776,7 +693,6 @@ path {
 .clients__logo {
 	text-align: center;
 }
-
 .clients__link:nth-child(1):hover path:nth-child(4n + 1) {
 	fill: #4285f4;
 }
@@ -819,9 +735,8 @@ path {
 .clients__link:nth-child(6):hover path {
 	fill: #1db954;
 }
-.testimonial {
-}
 
+/* Секція testimonial */
 .testimonial__container {
 	max-width: 54.5rem;
 	position: relative;
@@ -847,11 +762,9 @@ path {
 	text-align: center;
 	margin-block-end: 4.375rem;
 }
-
 .testimonial__item {
 	text-align: center;
 }
-
 .testimonial__blockqoute {
 	color: #2b384c;
 	line-height: 1.333;
@@ -863,27 +776,18 @@ path {
 	font-family: "Poppins", sans-serif;
 	margin-block-end: 3.125rem;
 }
-
 .testimonial__top {
 	font-weight: 500;
 	font-size: 1.125rem;
 	margin-block-end: 0.5rem;
 	line-height: 1.444;
 }
-
 .testimonial__label {
 	font-weight: 300;
 	line-height: 1.5;
 }
 
-.testimonial__scroll {
-}
-
-.contact {
-}
-
-.contact__container {
-}
+/* Секція contact */
 
 .contact__items {
 	background-color: var(--colorMain);
@@ -893,9 +797,6 @@ path {
 	justify-content: space-between;
 	border-radius: 15px;
 	box-shadow: 0rem 3.6875rem 7.75rem 0rem rgba(0, 0, 0, 0.12);
-}
-
-.contact__item {
 }
 .contact__item:nth-child(1) {
 	max-width: 30.0625rem;
@@ -910,23 +811,18 @@ path {
 	gap: 2.1875rem;
 	grid-template-columns: 1fr;
 }
-.item-contact__head {
-}
 .item-contact__head .head-text__title {
 	margin-block-end: 1rem;
 	font-size: clamp(1.5rem, 2vw + 1rem, 2.375rem);
 }
-
 .item-contact__contacts {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 0.75rem;
 }
-
 .contacts .contacts__items {
 	max-width: 21rem;
 }
-
 .contacts__items {
 	display: flex;
 	gap: 0.8125rem;
@@ -948,35 +844,19 @@ path {
 	padding: 0.75rem;
 	border-radius: 0.25rem;
 }
-
-.contacts__body {
-}
-
 .contacts__text {
 	font-size: 14px;
 	color: #424e60;
 	margin-block-end: 0.25rem;
 }
-
 .contacts__contact {
 	font-weight: 500;
 	color: #132238;
 }
-
-.item-contact__social {
-}
-
 .item-contact__label {
 	font-size: 1.125rem;
 	margin-block-end: 3.125rem;
 }
-
-.item-contact__form {
-}
-
-.form-block {
-}
-
 .form-block__items {
 	display: flex;
 	flex-direction: column;
@@ -1026,16 +906,13 @@ path {
 	display: flex;
 	gap: 0.75rem;
 }
+/* Блок footer */
 
 .footer {
 	background-color: #2b384c;
 	margin-block-start: -10rem;
 	color: #f0f1f3;
 }
-
-.footer__container {
-}
-
 .footer__body {
 	padding-block-start: 10rem;
 	padding-block-end: 3.125rem;
@@ -1050,14 +927,10 @@ path {
 	gap: 11.375rem;
 	align-items: center;
 }
-
-.block-menu__text {
-}
-
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
 }
 @media (max-width: 1350px) {
-}
+} */
 @media (max-width: 1315px) {
 	.footer__body {
 		padding-block-start: 6.25rem;
@@ -1106,12 +979,12 @@ path {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
-@media (max-width: 1150px) {
+/* @media (max-width: 1150px) {
 }
 @media (max-width: 1110px) {
 }
 @media (max-width: 1087px) {
-}
+} */
 @media (max-width: 65.625rem) {
 	.hero__container {
 		padding-block-start: 2.5rem;
@@ -1224,15 +1097,15 @@ path {
 		padding: 1.875rem;
 	}
 }
-@media (max-width: 820px) {
-}
+/* @media (max-width: 820px) {
+} */
 @media (max-width: 720px) {
 	.item-contact__contacts {
 		grid-template-columns: 1fr;
 	}
 }
-@media (max-width: 700px) {
-}
+/* @media (max-width: 700px) {
+} */
 @media (max-width: 610px) {
 	.buttons__button {
 		width: 100%;
