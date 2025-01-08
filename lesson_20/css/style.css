@@ -472,8 +472,7 @@ path {
 .blog__container,
 .services__container,
 .clients__container,
-.testimonial__container,
-.contact__container {
+.testimonial__container {
 	margin-block-end: clamp(2.5rem, 5.505vw + 1.021rem, 6.25rem);
 }
 .portfolio__title {
@@ -816,7 +815,9 @@ path {
 }
 
 /* Секція contact */
-
+.contact__container {
+	margin-block-end: -3.75rem;
+}
 .contact__items {
 	background-color: var(--colorMain);
 	padding: 5.5rem;
@@ -936,12 +937,13 @@ path {
 
 .footer {
 	background-color: #2b384c;
-	margin-block-start: -10rem;
 	color: #f0f1f3;
 }
-.footer__body {
+.footer__container {
 	padding-block-start: 10rem;
 	padding-block-end: 3.125rem;
+}
+.footer__body {
 }
 .footer__body .block-menu__menu {
 	font-weight: 400;
