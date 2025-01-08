@@ -63,7 +63,7 @@ path {
 }
 /* Блок header */
 .header {
-	padding-block: 1.25rem;
+	padding-block: clamp(0.625rem, 0.917vw + 0.378rem, 1.25rem);
 	position: sticky;
 	top: 0;
 	z-index: 1000;
