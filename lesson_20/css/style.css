@@ -1128,6 +1128,12 @@ path {
 	.block-menu__burger::after {
 		height: 0.125rem;
 	}
+	.open-menu .block-menu__burger::after {
+		transform: rotate(45deg) translate(-0.0625rem);
+	}
+	.open-menu .block-menu__burger::before {
+		transform: rotate(-45deg) translate(-0.0625rem);
+	}
 	.buttons__button {
 		width: 100%;
 	}
