@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 20</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__items">
+						<a href="index.html" class="header__item logo">
+							<img class="logo__img" src="img/main_logo.svg" alt="Main Logo">
+						</a>
+						<nav class="header__nav item-header">
+							<ul class="item-header__menu">
+								<li class="item-header__list"><a href="#" class="item-header__link">Home</a></li>
+								<li class="item-header__list"><a href="#" class="item-header__link">Movies & Shows</a></li>
+								<li class="item-header__list"><a href="#" class="item-header__link">Support</a></li>
+								<li class="item-header__list"><a href="#" class="item-header__link">Subscriptions</a></li>
+							</ul>
+						</nav>
+						<div class="header__item interact">
+							<button aria-label="Search" class="interact__search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+									<path
+										d="M29.75 29.75L22.388 22.388M22.388 22.388C24.3108 20.4653 25.5 17.809 25.5 14.875C25.5 9.00697 20.743 4.25 14.875 4.25C9.00697 4.25 4.25 9.00697 4.25 14.875C4.25 20.743 9.00697 25.5 14.875 25.5C17.809 25.5 20.4653 24.3108 22.388 22.388Z"
+										stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+							<button aria-label="Notification" class="interact__notification">
+								<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+									<path
+										d="M21.0474 24.1991C23.7314 23.8807 26.3195 23.2497 28.7743 22.3435C26.7389 20.0841 25.5 17.093 25.5 13.8125V12.8197C25.5002 12.7965 25.5002 12.7732 25.5002 12.75C25.5002 8.05558 21.6947 4.25 17.0002 4.25C12.3058 4.25 8.50024 8.05558 8.50024 12.75L8.49996 13.8125C8.49996 17.093 7.26105 20.0841 5.22559 22.3435C7.68057 23.2498 10.2689 23.8808 12.953 24.1992M21.0474 24.1991C19.7202 24.3565 18.3695 24.4375 17 24.4375C15.6306 24.4375 14.2801 24.3565 12.953 24.1992M21.0474 24.1991C21.1791 24.6091 21.2502 25.0462 21.2502 25.5C21.2502 27.8472 19.3475 29.75 17.0002 29.75C14.653 29.75 12.7502 27.8472 12.7502 25.5C12.7502 25.0463 12.8213 24.6091 12.953 24.1992"
+										stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+						<div class="header__burger menu-burger">
+							<button aria-label="Burger menu" class="menu-burger__body">
+								<span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<section class="hero">
+					<div class="hero__body">
+						<div class="hero__image">
+							<img class="hero__img" src="img/main.webp" alt="Poster Avengers">
+						</div>
+						<div class="hero__interact">
+							<h1 class="hero__title">Avengers : Endgame</h1>
+							<p class="hero__label">With the help of remaining allies, the Avengers must assemble once more
+								in
+								order to undo Thanos's actions and undo the chaos to the universe, no matter what
+								consequences
+								may be in store, and no matter who they face... Avenge the fallen.
+							</p>
+							<div class="hero__button buttons">
+								<button class="buttons__button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.75 6.59479C5.75 4.93097 7.53383 3.87624 8.9917 4.67807L22.4557 12.0833C23.9668 12.9144 23.9668 15.0856 22.4557 15.9167L8.9917 23.3219C7.53383 24.1238 5.75 23.069 5.75 21.4052V6.59479Z"
+											fill="white" />
+									</svg>
+									Play Now
+								</button>
+							</div>
+							<div class="hero__controls controls">
+								<button class="controls__button" aria-label="ad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+										fill="none">
+										<path d="M14.5 7V21M21.5 14L7.5 14" stroke="white" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+								<button class="controls__button" aria-label="like">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+										fill="none">
+										<path
+											d="M8.238 11.9584C9.17874 11.9584 10.0276 11.4382 10.6081 10.698C11.5101 9.54785 12.647 8.59067 13.9465 7.89862C14.789 7.44994 15.52 6.78337 15.8745 5.89712C16.1226 5.27699 16.25 4.61522 16.25 3.94732V3.20837C16.25 2.72512 16.6418 2.33337 17.125 2.33337C18.5747 2.33337 19.75 3.50863 19.75 4.95837C19.75 6.30194 19.4472 7.57478 18.9061 8.71236C18.5962 9.36376 19.0309 10.2084 19.7522 10.2084M19.7522 10.2084H23.399C24.5968 10.2084 25.6689 11.018 25.7957 12.209C25.8481 12.7016 25.875 13.2019 25.875 13.7084C25.875 17.0306 24.7178 20.0825 22.7845 22.4831C22.3323 23.0446 21.6332 23.3334 20.9123 23.3334H16.227C15.6627 23.3334 15.1021 23.2424 14.5668 23.064L10.9332 21.8528C10.3979 21.6743 9.83732 21.5834 9.27304 21.5834H7.38824M19.7522 10.2084H17.125M7.38824 21.5834C7.48485 21.822 7.58999 22.0564 7.70327 22.2859C7.93326 22.7521 7.61223 23.3334 7.09245 23.3334H6.03337C4.99654 23.3334 4.0349 22.729 3.73232 21.7373C3.33743 20.4431 3.125 19.0693 3.125 17.6459C3.125 15.8347 3.46894 14.1038 4.09507 12.515C4.45097 11.6119 5.36189 11.0834 6.33258 11.0834H7.5608C8.11138 11.0834 8.43019 11.7319 8.14435 12.2025C7.1802 13.7898 6.625 15.653 6.625 17.6459C6.625 19.0383 6.89604 20.3674 7.38824 21.5834Z"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<button class="controls__button" aria-label="volume">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+										fill="none">
+										<path
+											d="M22.7997 6.57535C26.9002 10.6759 26.9002 17.3241 22.7997 21.4246M19.7064 9.66904C22.0984 12.061 22.0984 15.9391 19.7064 18.3311M8.375 9.62504L13.8813 4.11875C14.4325 3.56753 15.375 3.95793 15.375 4.73747V23.2626C15.375 24.0421 14.4325 24.4325 13.8813 23.8813L8.375 18.375H5.76056C4.73466 18.375 3.77356 17.7842 3.5011 16.7951C3.25595 15.9052 3.125 14.9679 3.125 14C3.125 13.0322 3.25595 12.0949 3.5011 11.205C3.77356 10.2159 4.73466 9.62504 5.76056 9.62504H8.375Z"
+											stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+							<div class="hero__scrolls scroll">
+								<button aria-label="arrow-left" class="scroll__button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+										fill="none">
+										<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125" stroke="white"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<ul class="scroll__lines">
+									<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button></li>
+									<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button></li>
+									<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button></li>
+									<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button></li>
+								</ul>
+								<button aria-label="arrow-right" class="scroll__button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+										fill="none">
+										<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="main__body">
+					<section class="genres">
+						<div class="genres__body">
+							<div class="genres__button buttons">
+								<button class="buttons__button">Movies</button>
+								<button class="buttons__button">Shows</button>
+							</div>
+							<div class="genres__top top">
+								<h2 class="top__title">Our Genres</h2>
+								<ul class="top__scroll">
+									<li class="top__list">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+									<li class="top__list scroll">
+										<ul class="scroll__lines">
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+										</ul>
+									</li>
+									<li class="top__list">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="genres__items">
+								<article class="genres__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_1.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<h3 class="item__title">Action</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="genres__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_2.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<h3 class="item__title">Adventure</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="genres__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_3.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<h3 class="item__title">Comedy</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="genres__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_4.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<h3 class="item__title">Drama</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="genres__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_5.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<h3 class="item__title">Horror</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="popular">
+						<div class="popular__body">
+							<div class="popular__top top">
+								<h2 class="top__title">Popular Top 10 In Genres</h2>
+								<ul class="top__scroll">
+									<li class="top__list">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+									<li class="top__list scroll">
+										<ul class="scroll__lines">
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+										</ul>
+									</li>
+									<li class="top__list">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="popular__items">
+								<article class="popular__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_6.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__button buttons">
+												<button class="buttons__button">Top 10 In</button>
+											</div>
+											<h3 class="item__title">Action</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+														viewBox="0 0 28 28" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="popular__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_7.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__button buttons">
+												<button class="buttons__button">Top 10 In</button>
+											</div>
+											<h3 class="item__title">Adventure</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__buttons">
+													<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+														viewBox="0 0 28 28" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="popular__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_8.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__button buttons">
+												<button class="buttons__button">Top 10 In</button>
+											</div>
+											<h3 class="item__title">Comedy</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+														viewBox="0 0 28 28" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="popular__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/films_9.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__button buttons">
+												<button class="buttons__button">Top 10 In</button>
+											</div>
+											<h3 class="item__title">Drama</h3>
+											<div class="item__scrolls">
+												<button aria-label="arrow-right" class="item__button">
+													<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+														viewBox="0 0 28 28" fill="none">
+														<path d="M15.75 5.25L24.5 14M24.5 14L15.75 22.75M24.5 14H3.5" stroke="white"
+															stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="trending">
+						<div class="trending__body">
+							<div class="trending__top top">
+								<h2 class="top__title">Trending Now</h2>
+								<ul class="top__scroll">
+									<li class="top__list scroll">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+									<li class="top__list scroll">
+										<ul class="scroll__lines">
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+										</ul>
+									</li>
+									<li class="top__list scroll">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="trending__items">
+								<article class="trending__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_1.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__time">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+													fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z"
+														fill="#999999" />
+												</svg>
+												1h 30min
+											</div>
+											<div class="item__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+													fill="none">
+													<path
+														d="M12.5996 15C14.2565 15 15.5996 13.6569 15.5996 12C15.5996 10.3431 14.2565 9 12.5996 9C10.9428 9 9.59961 10.3431 9.59961 12C9.59961 13.6569 10.9428 15 12.5996 15Z"
+														fill="#999999" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M1.92302 11.4467C3.41027 6.97571 7.62752 3.75 12.6001 3.75C17.5704 3.75 21.7861 6.97271 23.2752 11.4405C23.3955 11.8015 23.3956 12.1922 23.2755 12.5533C21.7882 17.0243 17.571 20.25 12.5984 20.25C7.62808 20.25 3.41245 17.0273 1.92335 12.5595C1.80301 12.1985 1.80289 11.8078 1.92302 11.4467ZM17.8496 12C17.8496 14.8995 15.4991 17.25 12.5996 17.25C9.70011 17.25 7.34961 14.8995 7.34961 12C7.34961 9.1005 9.70011 6.75 12.5996 6.75C15.4991 6.75 17.8496 9.1005 17.8496 12Z"
+														fill="#999999" />
+												</svg>
+												2K
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="trending__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_2.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__time">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+													fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z"
+														fill="#999999" />
+												</svg>
+												1h 57min
+											</div>
+											<div class="item__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+													fill="none">
+													<path
+														d="M12.5996 15C14.2565 15 15.5996 13.6569 15.5996 12C15.5996 10.3431 14.2565 9 12.5996 9C10.9428 9 9.59961 10.3431 9.59961 12C9.59961 13.6569 10.9428 15 12.5996 15Z"
+														fill="#999999" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M1.92302 11.4467C3.41027 6.97571 7.62752 3.75 12.6001 3.75C17.5704 3.75 21.7861 6.97271 23.2752 11.4405C23.3955 11.8015 23.3956 12.1922 23.2755 12.5533C21.7882 17.0243 17.571 20.25 12.5984 20.25C7.62808 20.25 3.41245 17.0273 1.92335 12.5595C1.80301 12.1985 1.80289 11.8078 1.92302 11.4467ZM17.8496 12C17.8496 14.8995 15.4991 17.25 12.5996 17.25C9.70011 17.25 7.34961 14.8995 7.34961 12C7.34961 9.1005 9.70011 6.75 12.5996 6.75C15.4991 6.75 17.8496 9.1005 17.8496 12Z"
+														fill="#999999" />
+												</svg>
+												1.5K
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="trending__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_3.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__time">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+													fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z"
+														fill="#999999" />
+												</svg>
+												2h 10min
+											</div>
+											<div class="item__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+													fill="none">
+													<path
+														d="M12.5996 15C14.2565 15 15.5996 13.6569 15.5996 12C15.5996 10.3431 14.2565 9 12.5996 9C10.9428 9 9.59961 10.3431 9.59961 12C9.59961 13.6569 10.9428 15 12.5996 15Z"
+														fill="#999999" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M1.92302 11.4467C3.41027 6.97571 7.62752 3.75 12.6001 3.75C17.5704 3.75 21.7861 6.97271 23.2752 11.4405C23.3955 11.8015 23.3956 12.1922 23.2755 12.5533C21.7882 17.0243 17.571 20.25 12.5984 20.25C7.62808 20.25 3.41245 17.0273 1.92335 12.5595C1.80301 12.1985 1.80289 11.8078 1.92302 11.4467ZM17.8496 12C17.8496 14.8995 15.4991 17.25 12.5996 17.25C9.70011 17.25 7.34961 14.8995 7.34961 12C7.34961 9.1005 9.70011 6.75 12.5996 6.75C15.4991 6.75 17.8496 9.1005 17.8496 12Z"
+														fill="#999999" />
+												</svg>
+												1.8K
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="trending__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_4.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__time">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+													fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z"
+														fill="#999999" />
+												</svg>
+												2h 20min
+											</div>
+											<div class="item__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+													fill="none">
+													<path
+														d="M12.5996 15C14.2565 15 15.5996 13.6569 15.5996 12C15.5996 10.3431 14.2565 9 12.5996 9C10.9428 9 9.59961 10.3431 9.59961 12C9.59961 13.6569 10.9428 15 12.5996 15Z"
+														fill="#999999" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M1.92302 11.4467C3.41027 6.97571 7.62752 3.75 12.6001 3.75C17.5704 3.75 21.7861 6.97271 23.2752 11.4405C23.3955 11.8015 23.3956 12.1922 23.2755 12.5533C21.7882 17.0243 17.571 20.25 12.5984 20.25C7.62808 20.25 3.41245 17.0273 1.92335 12.5595C1.80301 12.1985 1.80289 11.8078 1.92302 11.4467ZM17.8496 12C17.8496 14.8995 15.4991 17.25 12.5996 17.25C9.70011 17.25 7.34961 14.8995 7.34961 12C7.34961 9.1005 9.70011 6.75 12.5996 6.75C15.4991 6.75 17.8496 9.1005 17.8496 12Z"
+														fill="#999999" />
+												</svg>
+												3K
+											</div>
+										</div>
+									</a>
+								</article>
+								<article class="trending__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_5.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											<div class="item__time">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+													fill="none">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 6C12.75 5.58579 12.4142 5.25 12 5.25C11.5858 5.25 11.25 5.58579 11.25 6V12C11.25 12.4142 11.5858 12.75 12 12.75H16.5C16.9142 12.75 17.25 12.4142 17.25 12C17.25 11.5858 16.9142 11.25 16.5 11.25H12.75V6Z"
+														fill="#999999" />
+												</svg>
+												1h 42min
+											</div>
+											<div class="item__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+													fill="none">
+													<path
+														d="M12.5996 15C14.2565 15 15.5996 13.6569 15.5996 12C15.5996 10.3431 14.2565 9 12.5996 9C10.9428 9 9.59961 10.3431 9.59961 12C9.59961 13.6569 10.9428 15 12.5996 15Z"
+														fill="#999999" />
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M1.92302 11.4467C3.41027 6.97571 7.62752 3.75 12.6001 3.75C17.5704 3.75 21.7861 6.97271 23.2752 11.4405C23.3955 11.8015 23.3956 12.1922 23.2755 12.5533C21.7882 17.0243 17.571 20.25 12.5984 20.25C7.62808 20.25 3.41245 17.0273 1.92335 12.5595C1.80301 12.1985 1.80289 11.8078 1.92302 11.4467ZM17.8496 12C17.8496 14.8995 15.4991 17.25 12.5996 17.25C9.70011 17.25 7.34961 14.8995 7.34961 12C7.34961 9.1005 9.70011 6.75 12.5996 6.75C15.4991 6.75 17.8496 9.1005 17.8496 12Z"
+														fill="#999999" />
+												</svg>
+												5K
+											</div>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="releases">
+						<div class="releases__body">
+							<div class="releases__top top">
+								<h2 class="top__title">New Releases</h2>
+								<ul class="top__scroll">
+									<li class="top__list scroll">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+									<li class="top__list scroll">
+										<ul class="scroll__lines">
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+											<li class="scroll__list"><button aria-label="scroll" class="scroll__line"></button>
+											</li>
+										</ul>
+									</li>
+									<li class="top__list scroll">
+										<button aria-label="arrow-left" class="scroll__button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+												fill="none">
+												<path d="M22.75 14L5.25 14M5.25 14L13.125 21.875M5.25 14L13.125 6.125"
+													stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+							<div class="releases__items">
+								<article class="releases__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_6.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											Released at
+											<time class="item__date" datetime="14-04-2023">14 April 2023</time>
+										</div>
+									</a>
+								</article>
+								<article class="releases__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_7.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											Released at
+											<time class="item__date" datetime="22-04-2023">22 April 2023</time>
+										</div>
+									</a>
+								</article>
+								<article class="releases__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_8.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											Released at
+											<time class="item__date" datetime="13-04-2023">13 April 2023</time>
+										</div>
+									</a>
+								</article>
+								<article class="releases__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_9.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											Released at
+											<time class="item__date" datetime="19-04-2023">19 April 2023</time>
+										</div>
+									</a>
+								</article>
+								<article class="releases__item item">
+									<a class="item__link" href="#">
+										<div class="item__image">
+											<img src="img/poster_10.webp" alt="Poster Films">
+										</div>
+										<div class="item__about">
+											Released at
+											<time class="item__date" datetime="11-04-2023">11 April 2023</time>
+										</div>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
